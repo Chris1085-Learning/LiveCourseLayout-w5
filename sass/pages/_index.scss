@@ -35,13 +35,36 @@
   }
 }
 
-.subjectInfo-title {
+.subInfo-title {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 0px;
 }
 
-.subjectInfo-name {
-  font-size: 12px;
-  line-height: 24px;
+.assignmentContent {
+  min-width: 63.47%;
+  border: 1px solid $bg-light-green;
+
+  .assignmentContent-title {
+    padding: 12px 16px;
+
+    .more {
+      text-decoration: none;
+    }
+  }
+}
+
+.contentList-item {
+  padding: 16px;
+  .title-content {
+    margin-left: 8px;
+  }
+
+  .subInfo-title {
+    line-height: 20px;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
 }

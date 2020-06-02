@@ -52,12 +52,6 @@
 
 .user {
   padding-left: 32px;
-  .userImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-
   .userInfo {
     margin-left: 16px;
   }
@@ -71,4 +65,10 @@
     font-size: 14px;
     line-height: 24px;
   }
+}
+
+.userImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
