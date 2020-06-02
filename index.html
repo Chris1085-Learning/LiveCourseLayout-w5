@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LiveCourseLayout-w5</title>
     <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -13,7 +14,82 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="d-flex">
+    <aside class="sidebar bg-color d-flex flex-column justify-content-between">
+      <div>
+        <h1>
+          <a href="#">ANSWER</a>
+        </h1>
+        <ul class="list">
+          <li class="list-item">
+            <a href="#" class="list-item-link d-flex align-items-center">
+              <i class="material-icons">
+                insert_chart
+              </i>
+              Dashboard</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-item-link d-flex align-items-center"
+              ><i class="material-icons"> question_answer </i>Question</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-item-link d-flex align-items-center"
+              ><i class="material-icons"> assignment </i>Assignment</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-item-link d-flex align-items-center"
+              ><i class="material-icons"> video_library </i>Course</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="./admin.html" class="list-item-link d-flex align-items-center"
+              ><i class="material-icons"> people </i>Admin</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-item-link d-flex align-items-center"
+              ><i class="material-icons"> settings </i>Settings</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="user d-flex align-items-center">
+        <img src="./images/andychen.jpeg" alt="" class="userImg" />
+        <div class="userInfo d-flex flex-column">
+          <span class="userName font-weight-bold">Andy Chen</span>
+          <span class="userEmail text-secondary">andy0401@mail.com</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="assignment flex-grow-1">
+      <header class="header d-flex justify-content-between">
+        <div class="d-flex">
+          <h2>Assignment</h2>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
