@@ -455,7 +455,7 @@ textarea {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   width: 100%;
   height: 100%;
@@ -545,10 +545,15 @@ p {
   background-color: #edf4ee;
 }
 
-.text-color {
+.text-color-green {
   color: #2a8356;
 }
 
+.text-color-gray {
+  color: #0000009a;
+}
+
+/* sidebar block */
 .sidebar {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 23.125%;
@@ -556,9 +561,14 @@ p {
   height: 100vh;
   padding-top: 32px;
   padding-bottom: 32px;
+  /* img replaced text */
 }
 
-.sidebar h1 a {
+.sidebar .logo {
+  padding-left: 32px;
+}
+
+.sidebar .logo a {
   background-image: url("../../images/logo-ANSWER.svg");
   background-repeat: no-repeat;
   display: block;
@@ -566,18 +576,15 @@ p {
   overflow: hidden;
   white-space: nowrap;
   max-height: 40px;
-  margin-bottom: 32px;
 }
 
-.list .list-item {
-  margin-bottom: 28px;
+/* menu list */
+.list-item-link {
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
-}
-
-.list-item-link {
   color: black;
+  padding: 4px 32px;
 }
 
 .list-item-link .material-icons {
@@ -589,16 +596,19 @@ p {
   color: #2a8356;
   position: relative;
   background-color: white;
-  mix-blend-mode: light;
 }
 
 .list-item-link:hover::before {
   position: absolute;
   content: "";
-  top: -4px;
-  left: -32px;
+  top: 0px;
+  left: 0px;
   height: 32px;
   border-left: 4px solid #2a8356;
+}
+
+.user {
+  padding-left: 32px;
 }
 
 .user .userImg {
@@ -618,6 +628,58 @@ p {
 
 .user .userEmail {
   font-size: 14px;
+  line-height: 24px;
+}
+
+.header {
+  padding: 32px;
+}
+
+.header-info {
+  margin-bottom: 32px;
+}
+
+.header-info .title {
+  line-height: 33px;
+  margin-bottom: 0px;
+}
+
+.header-info .dropdown {
+  margin-left: 46px;
+}
+
+.header-info .dropdown .btn {
+  font-weight: 500;
+}
+
+.btn-course {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  padding-left: 0px !important;
+}
+
+.subInfo {
+  font-size: 12px !important;
+  line-height: 24px !important;
+}
+
+.assignmentList {
+  min-width: 34.78%;
+}
+
+.assignmentList .assignmentList-item {
+  padding: 12px;
+  border: 1px solid #edf4ee;
+}
+
+.subjectInfo-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.subjectInfo-name {
+  font-size: 12px;
   line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */

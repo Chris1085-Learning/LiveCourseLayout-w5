@@ -1,11 +1,16 @@
+/* sidebar block */
 .sidebar {
   flex: 0 0 23.125%;
-  // padding: 32px;
   height: 100vh;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  h1 a {
+  .logo {
+    padding-left: 32px;
+  }
+
+  /* img replaced text */
+  .logo a {
     background-image: url("../../images/logo-ANSWER.svg");
     background-repeat: no-repeat;
     display: block;
@@ -13,21 +18,16 @@
     overflow: hidden;
     white-space: nowrap;
     max-height: 40px;
-    margin-bottom: 32px;
   }
 }
 
-.list {
-  .list-item {
-    margin-bottom: 28px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-  }
-}
-
+/* menu list */
 .list-item-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
   color: black;
+  padding: 4px 32px;
 
   .material-icons {
     margin-right: 16px;
@@ -38,21 +38,20 @@
     color: $text-green;
     position: relative;
     background-color: white;
-    mix-blend-mode: light;
-    // color: purple;
   }
 
   &:hover::before {
     position: absolute;
     content: "";
-    top: -4px;
-    left: -32px;
+    top: 0px;
+    left: 0px;
     height: 32px;
     border-left: 4px solid $text-green;
   }
 }
 
 .user {
+  padding-left: 32px;
   .userImg {
     width: 40px;
     height: 40px;
