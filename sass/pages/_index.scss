@@ -3,7 +3,6 @@
 }
 
 .header-info {
-  margin-bottom: 32px;
   .title {
     line-height: 33px;
     margin-bottom: 0px;
@@ -17,11 +16,6 @@
   }
 }
 
-.btn-course {
-  box-shadow: none !important;
-  padding-left: 0px !important;
-}
-
 .subInfo {
   font-size: 12px !important;
   line-height: 24px !important;
@@ -31,7 +25,8 @@
   min-width: 34.78%;
   .assignmentList-item {
     padding: 12px;
-    border: 1px solid $bg-light-green;
+    margin-bottom: -1px;
+    cursor: pointer;
   }
 }
 
@@ -43,28 +38,42 @@
 
 .assignmentContent {
   min-width: 63.47%;
-  border: 1px solid $bg-light-green;
 
   .assignmentContent-title {
     padding: 12px 16px;
+    margin-bottom: -1px;
 
     .more {
       text-decoration: none;
     }
   }
 }
+.contentList {
+  margin-bottom: 0px !important;
+}
 
 .contentList-item {
-  padding: 16px;
-  .title-content {
-    margin-left: 8px;
+  position: relative;
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
   }
 
   .subInfo-title {
     line-height: 20px;
   }
 
-  .title {
-    margin-bottom: 16px;
+  .content {
+    width: auto;
+    border-bottom: 1px solid $bg-light-green;
   }
+}
+
+.listCircle {
+  padding-left: 12px;
+}
+
+.border-assignment {
+  border: 1px solid #cdddcd;
 }

@@ -94,24 +94,14 @@ body {
   }
 }
 
+code {
+  font: Regular 14px/21px Roboto Mono;
+  color: $text-green !important;
+  background-color: $bg-light-green !important;
+}
+
 p {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.bg-color {
-  background-color: $bg-light-green;
-}
-
-.text-color-green {
-  color: $text-green;
-}
-
-.text-color-gray {
-  color: $text-gray;
 }
