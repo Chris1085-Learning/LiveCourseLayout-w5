@@ -543,6 +543,10 @@ p {
   font-weight: normal;
 }
 
+ul {
+  margin-bottom: 0px !important;
+}
+
 .text-center {
   text-align: center;
 }
@@ -566,6 +570,7 @@ p {
 
 .btn-normal:hover {
   color: black;
+  text-decoration: none;
 }
 
 .btn-lightGreen {
@@ -575,6 +580,10 @@ p {
   border: 1px solid #cdddcd !important;
   font-size: 16px;
   line-height: 24px;
+}
+
+.btn-lightGreen:hover {
+  background-color: #cdddcd !important;
 }
 
 .btn-course {
@@ -638,10 +647,6 @@ p {
   padding: 4px 32px;
 }
 
-.list-item-link .material-icons {
-  margin-right: 16px;
-}
-
 .list-item-link:hover {
   text-decoration: none;
   color: #2a8356;
@@ -662,10 +667,6 @@ p {
   padding-left: 32px;
 }
 
-.user .userInfo {
-  margin-left: 16px;
-}
-
 .user .userName {
   font-size: 16px;
   line-height: 24px;
@@ -682,7 +683,7 @@ p {
   border-radius: 50%;
 }
 
-.header {
+.main {
   padding: 32px;
 }
 
@@ -712,6 +713,10 @@ p {
   padding: 12px;
   margin-bottom: -1px;
   cursor: pointer;
+}
+
+.assignmentList .assignmentList-item:hover {
+  background-color: #cdddcd !important;
 }
 
 .subInfo-title {
@@ -761,5 +766,9 @@ p {
 
 .border-assignment {
   border: 1px solid #cdddcd;
+}
+
+.adminAdd:hover {
+  color: #2a8356;
 }
 /*# sourceMappingURL=style.css.map */
