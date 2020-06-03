@@ -455,7 +455,7 @@ textarea {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   width: 100%;
   height: 100%;
@@ -574,7 +574,7 @@ ul {
 }
 
 .btn-lightGreen {
-  width: 176px;
+  width: 180px;
   height: 40px;
   background-color: #edf4ee !important;
   border: 1px solid #cdddcd !important;
@@ -590,6 +590,7 @@ ul {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   padding-left: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .btn-outline-check {
@@ -611,6 +612,44 @@ ul {
   color: #2a8356 !important;
   background-color: white !important;
   border: 1px solid #2a8356 !important;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+.table .icon-sort {
+  font-size: 18px;
+  color: #2a8356;
+}
+
+.table thead th {
+  padding-bottom: 0;
+  border: none;
+}
+
+.table tbody tr:first-child td,
+.table th {
+  border-top: 1px solid #000;
+}
+
+.table tbody td,
+.table th {
+  border-bottom: 1px solid #cdddcd;
+}
+
+.table tbody td:nth-child(1n + 5),
+.table th:nth-child(1n + 5) {
+  width: 1%;
+}
+
+.table tbody td:last-child,
+.table th:last-child {
+  padding-right: 0;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #edf4ee !important;
 }
 
 /* sidebar block */

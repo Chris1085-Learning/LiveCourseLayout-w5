@@ -1,0 +1,29 @@
+.table {
+  margin: 0 auto;
+  .icon-sort {
+    font-size: 18px;
+    // vertical-align: middle;
+    color: $text-green;
+  }
+  thead th {
+    padding-bottom: 0;
+    border: none;
+  }
+  tbody tr:first-child td,
+  th {
+    border-top: 1px solid #000;
+  }
+  tbody td,
+  th {
+    border-bottom: 1px solid #cdddcd;
+    &:nth-child(1n + 5) {
+      width: 1%;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.table-hover tbody tr:hover {
+  background-color: #edf4ee !important;
+}
