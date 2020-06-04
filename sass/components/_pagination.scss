@@ -1,0 +1,29 @@
+.page-item {
+  .page-link {
+    width: 32px;
+    height: 32px;
+    padding: 6px 11.5px 7px 11.5px;
+    border: 1px solid $text-green !important;
+    color: black !important;
+  }
+
+  &:first-child,
+  &:last-child {
+    .page-link {
+      color: $text-green !important;
+      font-weight: bold;
+      padding: 4px !important;
+      .material-icons {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.active {
+  .page-link {
+    background-color: $text-green !important;
+    border: 1px solid $text-green !important;
+    color: white !important;
+  }
+}

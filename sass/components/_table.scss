@@ -1,29 +1,39 @@
 .table {
-  margin: 0 auto;
+  width: 100%;
   .icon-sort {
     font-size: 18px;
-    // vertical-align: middle;
     color: $text-green;
   }
+
+  // 調整table第一列的style
   thead th {
-    padding-bottom: 0;
-    border: none;
+    font-weight: bold;
+    border-top: 0px;
+    border-bottom: 1px solid black !important;
+    padding-bottom: 4.5px;
   }
-  tbody tr:first-child td,
-  th {
-    border-top: 1px solid #000;
-  }
+
   tbody td,
   th {
+    padding-left: 0px !important;
+  }
+
+  // 調整table每一列的style
+  tbody td {
     border-bottom: 1px solid #cdddcd;
-    &:nth-child(1n + 5) {
-      width: 1%;
-    }
-    &:last-child {
-      padding-right: 0;
+    padding-top: 19px;
+    padding-bottom: 17px;
+  }
+
+  // 調整table最後一行下右靠齊的style
+  tbody td:last-child {
+    text-align: right;
+    .btn-normal {
+      padding-left: 25px;
     }
   }
 }
+
 .table-hover tbody tr:hover {
-  background-color: #edf4ee !important;
+  background-color: $bg-light-green !important;
 }

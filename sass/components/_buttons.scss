@@ -1,4 +1,5 @@
-.btn-normal {
+// 每個a按鈕更改樣式
+.btn-general {
   text-decoration: none;
   color: black;
 
@@ -8,6 +9,7 @@
   }
 }
 
+// hoework按鈕
 .btn-lightGreen {
   width: 180px;
   height: 40px;
@@ -21,12 +23,18 @@
   }
 }
 
+// header course按鈕
 .btn-course {
   box-shadow: none !important;
   padding-left: 0px !important;
   padding-bottom: 0px !important;
+
+  &:hover {
+    color: $text-green !important;
+  }
 }
 
+// Mark as Read按鈕
 .btn-outline-check {
   color: $text-green !important;
   border: 1px solid $text-green !important;
@@ -36,6 +44,8 @@
     background-color: $text-green;
   }
 }
+
+//Reply按鈕
 .btn-check {
   background-color: $text-green !important;
   color: white !important;
